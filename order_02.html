@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link href="static/css/order_02.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="crossColor()">
+
+
+<!--detail alert page-->
+
+<div class="detail" id="">
+    <div class="unit">
+        <img src="static/pic/cat.png">
+        <p id="unitTitle">招牌证件照 (<span>2</span>张)</p>
+        <p>●护照、签证、报名、面试等的照片，此照在手全都有。</p>
+        <p>●专业化妆+商业布光+商业修片，三管齐下，保证张张精雕细琢。</p>
+        <p id="unitPrice">¥<span>180</span> 元／人</p>
+        <p id="unitMsg">多人同行或套餐内拍摄会触发优惠。<a href="">触发指南</a></p>
+    </div>
+</div>
+
+
+<div class="detail" id="detail">
+
+    <div class="comboTitle">
+
+        <p class="sale">优惠已触发</p>
+        <h4>花式虐狗套餐</h4>
+
+        <div>
+            <h5 class="item">原价: </h5>
+            <h5 class="money">¥ <span class="oldPrice">640</span></h5>
+        </div>
+        <div>
+            <h5 class="item">套餐内优惠价: </h5>
+            <h5 class="money">¥ <span class="newPrice">480</span></h5>
+        </div>
+
+    </div>
+
+    <div class="unit">
+        <img src="static/pic/cat.png">
+        <p id="unitTitle">招牌证件照 (<span>2</span>张)</p>
+        <p>●护照、签证、报名、面试等的照片，此照在手全都有。</p>
+        <p>●专业化妆+商业布光+商业修片，三管齐下，保证张张精雕细琢。</p>
+        <p id="unitPrice">¥<span>180</span> 元／人</p>
+        <p id="unitMsg">多人同行或套餐内拍摄会触发优惠。<a href="">触发指南</a></p>
+    </div>
+
+    <div class="unit">
+        <img src="static/pic/cat.png">
+        <p id="unitTitle">招牌证件照 (<span>2</span>张)</p>
+        <p>●护照、签证、报名、面试等的照片，此照在手全都有。</p>
+        <p>●专业化妆+商业布光+商业修片，三管齐下，保证张张精雕细琢。</p>
+        <p id="unitPrice">¥<span>180</span> 元／人</p>
+        <p id="unitMsg">多人同行或套餐内拍摄会触发优惠。<a href="">触发指南</a></p>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="closeMask" id="closeMask">
+    <img src="static/pic/x.png" onclick="closeMask()">
+</div>
+
+
+
+<!--self select-->
+
+<div class="selfBox" id="selfBox">
+    <div>
+        <p class="selfTitle">超值套餐:</p>
+        <ul class="selfMenu">
+            <li>
+                <div class="selfCounter">
+                    <p>个人证件套餐</p>
+                    <div>
+                    <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                    <span class="counter">×0</span>
+                    <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+            </li>
+
+            <li>
+                <div class="selfCounter">
+                    <p>全家福套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×0</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+            </li>
+
+            <li>
+                <div class="selfCounter">
+                    <p>虐狗套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <p class="selfTitle">超值套餐:</p>
+        <ul class="selfMenu">
+            <li>
+                <div class="selfCounter">
+                    <p>个人证件套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+            </li>
+
+            <li>
+                <div class="selfCounter">
+                    <p>全家福套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+            </li>
+            <li>
+                <div class="selfCounter">
+                    <p>虐狗套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+
+            </li>
+        </ul>
+    </div>
+
+
+    <div>
+        <p class="selfTitle">超值套餐:</p>
+        <ul class="selfMenu">
+            <li>
+                <div class="selfCounter">
+                    <p>个人证件套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+            </li>
+
+            <li>
+                <div class="selfCounter">
+                    <p>全家福套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+            </li>
+            <li>
+                <div class="selfCounter">
+                    <p>虐狗套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+
+            </li>
+        </ul>
+    </div>
+
+
+    <div>
+        <p class="selfTitle">超值套餐:</p>
+        <ul class="selfMenu">
+            <li>
+                <div class="selfCounter">
+                    <p>个人证件套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+            </li>
+
+            <li>
+                <div class="selfCounter">
+                    <p>全家福套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+            </li>
+            <li>
+                <div class="selfCounter">
+                    <p>虐狗套餐</p>
+                    <div>
+                        <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                        <span class="counter">×1</span>
+                        <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+                    </div>
+                </div>
+                <span style="display: none">×1</span>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="selfBtn" id="selfBtn">
+    <p>总价: 100+100=200</p>
+    <div onclick="closeMask()"><p>OK!</p></div>
+</div>
+
+
+
+<!--alert-->
+
+<div class="deleteAlert" id="deleteAlert">
+    <div>
+    <div class="deleteMsg">
+        <p>
+            是否删除该项？
+        </p>
+    </div>
+    <div>
+        <div class="deleteBtn deleteBtnLeft" id="deleteBtnLeft">
+            <p>不要</p>
+        </div>
+        <div class="deleteBtn deleteBtnRight" id="deleteBtnRight" >
+            <p>好嗒</p>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+<div id="mask"></div>
+
+
+<!--main-->
+
+
+<div>
+
+    <div>
+
+        <!--progress bar-->
+        <div class="container">
+            <img class="progress" src="static/pic/progress.png">
+            <a href="order_01.html"><img class="select select01" src="static/pic/circle.png"></a>
+            <a><img class="select select02" src="static/pic/circle.png"></a>
+            <a><img class="select select03" src="static/pic/dot.png"></a>
+            <a><img class="select select04" src="static/pic/dot.png"></a>
+        </div>
+
+        <!--table-->
+
+        <div>
+            <ul class="orderTable">
+
+                <li id="tableTop"><img src="static/pic/rag.png"><p>STEP2:您也许是想选择...</p></li>
+                <li></li>
+
+                <li>
+                    <p class="optionName" onclick="openMask()">个人美爆套餐</p>
+                    <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                    <span class="counter">×1</span>
+                    <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+
+                    <img class="arrow" src="static/pic/arrow.png" onclick="openMask()">
+
+                    <span class="price">
+                        <span>998</span>  998
+                    </span>
+                </li>
+
+                <li>
+                    <p class="optionName" onclick="openMask()">个人帅爆套餐</p>
+                    <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                    <span class="counter">×1</span>
+                    <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+
+                    <img class="arrow" src="static/pic/arrow.png" onclick="openMask()">
+
+                    <span class="price">
+                        <span>998</span>  998
+                    </span>
+                </li>
+
+                <li>
+                    <p class="optionName" onclick="openMask()">个人丑爆套餐</p>
+                    <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                    <span class="counter">×1</span>
+                    <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+
+                    <img class="arrow" src="static/pic/arrow.png" onclick="openMask()">
+
+                    <span class="price">
+                        <span>998</span>  998
+                    </span>
+                </li>
+
+
+                <li onclick="openMask()">
+                    <p class="optionName" onclick="openMask()">个人low爆套餐</p>
+                    <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                    <span class="counter">×1</span>
+                    <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+
+                    <img class="arrow" src="static/pic/arrow.png" onclick="openMask()">
+
+                    <span class="price">
+                        <span>998</span>  998
+                    </span>
+                </li>
+
+                <li>
+                    <p class="optionName" onclick="openMask()">个人屌爆套餐</p>
+                    <img class="symbol" src="static/pic/minus.png" onclick="minusOne(this)">
+                    <span class="counter" id="counter01">×1</span>
+                    <img class="symbol" src="static/pic/plus.png" onclick="plusOne(this)">
+
+                    <img class="arrow" src="static/pic/arrow.png" onclick="openMask()">
+
+                    <span class="price">
+                        <span>998</span>  998
+                    </span>
+                </li>
+
+
+                <!--add more list to there-->
+
+                <li onclick="openSelf()" id="tableBottom"><p>上面不够，我要自己拍</p><img class="arrow" src="static/pic/arrow.png"></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--footer-->
+
+<div class="footBar">
+    <div class="msg">
+        <p>联系人工客服</p>
+        <p>微信：dreamplus1   电话：18180554022</p>
+    </div>
+
+    <a href="order_03.html">
+    <div class="nextStep">
+        <img src="static/pic/rightArrow.png">
+        <p>下一步</p>
+    </div>
+    </a>
+</div>
+
+
+
+<script src="static/js/order_table.js"></script>
+<script src="static/js/counter.js"></script>
+<script src="static/js/option.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link href="static/css/order_confirm.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!--alert-->
+
+<div class="deleteAlert" id="deleteAlert">
+    <div>
+        <div class="deleteMsg">
+            <p>
+                请确认条款哦
+            </p>
+        </div>
+        <div>
+            <div class="deleteBtn deleteBtnRight">
+                <p onclick="hideAlert()">好嗒</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="mask"></div>
+
+
+<div>
+
+    <!--progress bar-->
+    <div class="container">
+        <img class="progress" src="static/pic/progress.png">
+        <a href="order_01.html"><img class="select select01" src="static/pic/circle.png"></a>
+        <a href="order_02.html"><img class="select select02" src="static/pic/circle.png"></a>
+        <a href="order_03.html"><img class="select select03" src="static/pic/circle.png"></a>
+        <a><img class="select select04" src="static/pic/circle.png"></a>
+    </div>
+
+    <!--table-->
+
+    <div>
+        <ul class="orderTable">
+
+            <li id="knowTitle"><p>拍摄须知</p></li>
+
+            <li><p>1.证件照、肖像照是默认一个造型，拍摄时可以进行微调，但不能进行多次换装拍摄，所以请拍摄前与造型师、摄影师沟通好造型。</p></li>
+
+            <li><p>2.证件照若需要第二张，按照180元的半价收取，即90元加一张。不同的姿势、发型、表情都算是第二张哦。</p></li>
+
+            <li><p>3.证件照默认提供一个背景底色，需要多个底色请事先给摄影师说明，加一个底色是20元。</p></li>
+
+            <li><p>4.肖像照的背景底色不能更换，请拍摄前确定好底色。</p></li>
+
+            <li><p>5.全家福可以从3人、4人入口进去，默认的拍摄人数是不一样的。全家福报价是一张，如果要加人是80元/人，加张数是100/张。</p></li>
+
+            <li id="checkBoxFt"><input id="checkBox" type="checkbox"><h4>我已阅读拍摄须知</h4></li>
+
+
+            <!--add more list to there-->
+
+            <li id="tableBottom"></li>
+
+        </ul>
+    </div>
+
+
+
+    <div class="commit">
+        <p>定金是全额的20%</p>
+        <a onclick="checkBoxConfirm()">
+            <div class="goBtn">
+                <p>对头，付定金，GO！</p>
+            </div>
+        </a>
+    </div>
+
+
+
+</div>
+
+
+<div class="footBar">
+    <div class="msg">
+        <p>联系人工客服</p>
+        <p>微信：dreamplus1   电话：18180554022</p>
+    </div>
+</div>
+
+<script src="static/js/checkbox.js"></script>
+</body>
+</html>

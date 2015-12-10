@@ -1,0 +1,150 @@
+body,p,a,span,ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 500px;
+    min-width: 320px;
+    background-image: url("../pic/background.png");
+    background-size: 100%;
+}
+
+@media (min-width: 500px) {
+    body {
+        margin: 0 auto;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    margin: 1.2em 0;
+}
+
+.progress {
+    padding-left: 1.2em;
+    width: 90%;
+    position: relative;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 1.2em;
+    color: #79cdcd;
+    margin-top: -2.2em;
+    margin-left: -30px;
+    left: 40%;
+    padding: 0 0.4em;
+    position: absolute;
+}
+
+.largeBox {
+    border-radius: 5px;
+    background-color: white;
+    width: 90%;
+    margin: 0 1.2em 1.6em;
+    position: relative;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 1px 1px 5px #cccccc;
+    -moz-box-shadow: 1px 1px 5px #cccccc;
+    -webkit-box-shadow: 1px 1px 5px #cccccc;
+}
+
+.box {
+    width: 160px;
+    margin: 0.5em;
+    display: inline-block;
+    border: 1px #79cdcd solid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.box>img {
+    height: 160px;
+    width: 160px;
+    display: block;
+}
+
+.box>p {
+    color: white;
+    background-color: #79cdcd;
+    padding: 0.2em;
+    font-size: 1em;
+}
+
+
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 1em;
+        margin-left: -25px;
+    }
+    .box>img {
+        width: 144px;
+        height: 144px;
+    }
+    .box {
+        width: 144px;
+    }
+}
+
+@media (max-width: 380px) {
+    .box>img {
+        width: 120px;
+        height: 120px;
+    }
+    .box>p {
+        font-size: 0.8em;
+    }
+    .box {
+        width: 120px;
+    }
+}
+
+@media (max-width: 340px) {
+    .title {
+        font-size: 0.8em;
+        margin-left: -20px;
+    }
+    .box>img {
+        width: 100px;
+        height: 100px;
+    }
+    .box {
+        width: 100px;
+    }
+}
+
+
+/*footer*/
+
+.msg {
+    margin: 4em 0;
+    text-align: center;
+}
+
+.msg p {
+    font-size: 0.6em;
+    color: #999999;
+    margin-bottom: 0.5em;
+}
+

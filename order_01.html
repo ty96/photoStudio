@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link href="static/css/order_01.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="mask" onclick="hide()"></div>
+
+
+<div>
+
+    <!--progress bar-->
+    <div class="container">
+        <img class="progress" src="static/pic/progress.png">
+        <a href="order_01.html"><img class="select select01" src="static/pic/circle.png"></a>
+        <a><img class="select select02" src="static/pic/dot.png"></a>
+        <a><img class="select select03" src="static/pic/dot.png"></a>
+        <a><img class="select select04" src="static/pic/dot.png"></a>
+    </div>
+
+
+    <!--table-->
+
+    <div>
+        <ul class="orderTable">
+
+            <li id="tableTop"><img src="static/pic/location.png"><p>STEP1:请选择您的拍照地点</p></li>
+            <li class="selectBg">
+                <div class="dateBox">
+                    <ul>
+                        <li id="year" class="date year" onclick="drop('yearSelector')">choose location</li>
+                        <li id="optionBtn" class="date optionBtn" onclick="drop('yearSelector')"><img src="static/pic/optionBtn.png"></li>
+
+                        <ul class="selector" id="yearSelector" onclick="hide()">
+                            <li onclick="changeValueOnly(this, 'year')">chengdu</li>
+                            <li onclick="changeValueOnly(this, 'year')">wuhan</li>
+                            <li onclick="changeValueOnly(this, 'year')">china</li>
+                            <li onclick="changeValueOnly(this, 'year')">chengdu</li>
+                            <li onclick="changeValueOnly(this, 'year')">chengdu</li>
+                        </ul>
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footBar">
+    <div class="msg">
+        <p>联系人工客服</p>
+        <p>微信：dreamplus1   电话：18180554022</p>
+    </div>
+
+    <a href="order_01_02.html">
+        <div class="nextStep">
+            <img src="static/pic/rightArrow.png">
+            <p>下一步</p>
+        </div>
+    </a>
+
+</div>
+
+
+<script src="static/js/dropMenu.js"></script>
+</body>
+</html>

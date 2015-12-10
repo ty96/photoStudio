@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link href="static/css/order_01_02.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="mask" onclick="hide()"></div>
+
+
+<div>
+
+    <!--progress bar-->
+    <div class="container">
+        <img class="progress" src="static/pic/progress.png">
+        <a href="order_01.html"><img class="select select01" src="static/pic/circle.png"></a>
+        <a><img class="select select02" src="static/pic/dot.png"></a>
+        <a><img class="select select03" src="static/pic/dot.png"></a>
+        <a><img class="select select04" src="static/pic/dot.png"></a>
+    </div>
+
+
+    <!--table-->
+
+    <div>
+        <ul class="orderTable">
+            <li id="tableTop"><img src="static/pic/people.png"><p>STEP1:请输入您的拍照人数</p></li>
+            <li class="selectBg">
+                <div class="dateBox">
+                    <input id="inputBox" class="date" type="number" placeholder="输入拍照人数" value="" oninput="cancelFocus()" onfocus="hideFooter()" onblur="setTimeout(seekFooter, 300)">
+                    <input id="blank" type="button" style="display: none">
+                </div>
+            </li>
+            <li>
+                <img id="confirm" src="static/pic/right.png">
+            </li>
+        </ul>
+    </div>
+
+
+</div>
+
+
+<div class="footBar" id="footBar">
+    <div class="msg">
+        <p>联系人工客服</p>
+        <p>微信：dreamplus1   电话：18180554022</p>
+    </div>
+
+    <a href="order_02.html">
+        <div class="nextStep">
+            <img src="static/pic/rightArrow.png">
+            <p>下一步</p>
+        </div>
+    </a>
+
+</div>
+
+<script src="static/js/confirm.js"></script>
+<script src="static/js/input.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link href="static/css/order_04.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="crossColor()">
+
+
+<!--alert-->
+
+<div class="deleteAlert" id="deleteAlert">
+    <div>
+        <div class="deleteMsg">
+            <p>
+                手机号不对哦
+            </p>
+        </div>
+        <div>
+            <div class="deleteBtn deleteBtnRight">
+                <p onclick="hideAlert()">好嗒</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="mask"></div>
+
+
+
+<div>
+
+    <!--progress bar-->
+    <div class="container">
+        <img class="progress" src="static/pic/progress.png">
+        <a href="order_01.html"><img class="select select01" src="static/pic/circle.png"></a>
+        <a href="order_02.html"><img class="select select02" src="static/pic/circle.png"></a>
+        <a href="order_03.html"><img class="select select03" src="static/pic/circle.png"></a>
+        <a><img class="select select04" src="static/pic/circle.png"></a>
+    </div>
+
+    <!--table-->
+
+    <div>
+        <ul class="orderTable">
+
+            <li id="tableTop"><img src="static/pic/bingo.png"><p>STEP4:预约信息确认</p></li>
+            <li></li>
+
+            <li>
+                <p>手机号码：</p>
+                <input id="inputBox" class="inputBox" placeholder="请输入手机号码" type="number" oninput="cancelTelFocus()" onfocus="hideFooter()">
+            </li>
+
+            <li>
+                <p>拍照时间:</p>
+                <span class="price">2015/09/23星期三</span>
+            </li>
+
+            <li>
+                <p>拍照地点:</p>
+                <span class="price">成都成都成都</span>
+            </li>
+
+
+            <li>
+                <p>个人美爆套餐:</p>
+                <span class="counter">×1</span>
+                <span class="price">
+                    <span>998</span>  总价:99998
+                </span>
+                <span class="price">
+                    <span>998</span>  总价:99998
+                </span>
+            </li>
+
+
+
+            <!--add more list to there-->
+
+            <li id="tableBottom"></li>
+
+        </ul>
+    </div>
+
+
+</div>
+
+<div class="footBar" id="footBar">
+    <div class="msg">
+        <p>联系人工客服</p>
+        <p>微信：dreamplus1   电话：18180554022</p>
+    </div>
+
+    <a id="nextStep" onclick="confirmNum()">
+        <div class="nextStep">
+            <img src="static/pic/rightArrow.png">
+            <p>下一步</p>
+        </div>
+    </a>
+</div>
+
+
+<script src="static/js/order_table.js"></script>
+<script src="static/js/option.js"></script>
+<script src="static/js/mobile.js"></script>
+<script src="static/js/input.js"></script>
+</body>
+</html>

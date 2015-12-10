@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title></title>
+    <link href="static/css/order_03.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div id="mask" onclick="hide()"></div>
+
+
+<div>
+
+    <!--progress bar-->
+    <div class="container">
+        <img class="progress" src="static/pic/progress.png">
+        <a href="order_01.html"><img class="select select01" src="static/pic/circle.png"></a>
+        <a href="order_02.html"><img class="select select02" src="static/pic/circle.png"></a>
+        <a><img class="select select03" src="static/pic/circle.png"></a>
+        <a><img class="select select04" src="static/pic/dot.png"></a>
+    </div>
+
+    <!--table-->
+
+    <div>
+        <ul class="orderTable">
+
+            <li id="tableTop"><img src="static/pic/time.png"><p>STEP3:请选择您的拍照时间</p></li>
+            <li class="selectBg">
+                <div class="dateBox">
+                    <ul>
+                        <li id="year" class="date year" onclick="drop('yearSelector')">2015/10/20</li>
+                        <li id="time" class="date time" onclick="drop('timeSelector')">10:00</li>
+
+
+                        <ul class="yearSelector selector" id="yearSelector" onclick="hide()">
+                            <li onclick="changeValue(this, 'year')">2015/10/21</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/22</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/23</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/24</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/25</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/26</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/27</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/28</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/29</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/30</li>
+                            <li onclick="changeValue(this, 'year')">2015/10/31</li>
+                            <li onclick="changeValue(this, 'year')">2015/11/01</li>
+                        </ul>
+
+                        <ul class="timeSelector selector" id="timeSelector" onclick="hide()">
+                            <li onclick="changeValue(this, 'time')">10:00</li>
+                            <li onclick="changeValue(this, 'time')">10:30</li>
+                            <li onclick="changeValue(this, 'time')">11:00</li>
+                            <li onclick="changeValue(this, 'time')">11:30</li>
+                            <li onclick="changeValue(this, 'time')">12:00</li>
+                            <li onclick="changeValue(this, 'time')">12:30</li>
+                            <li onclick="changeValue(this, 'time')">13:00</li>
+                            <li onclick="changeValue(this, 'time')">13:30</li>
+                            <li onclick="changeValue(this, 'time')">14:00</li>
+                            <li onclick="changeValue(this, 'time')">14:30</li>
+                            <li onclick="changeValue(this, 'time')">15:00</li>
+                            <li onclick="changeValue(this, 'time')">15:30</li>
+                            <li onclick="changeValue(this, 'time')">16:00</li>
+                            <li onclick="changeValue(this, 'time')">16:30</li>
+                            <li onclick="changeValue(this, 'time')">17:00</li>
+                            <li onclick="changeValue(this, 'time')">17:30</li>
+                            <li onclick="changeValue(this, 'time')">18:00</li>
+                        </ul>
+                    </ul>
+                </div>
+            </li>
+            <li id="finalTime">
+                <p id="finalTimeText">2015/10/20/10:00星期二</p>
+            </li>
+            <li>
+                <img id="confirm" src="static/pic/right.png">
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="footBar">
+    <div class="msg">
+        <p>联系人工客服</p>
+        <p>微信：dreamplus1   电话：18180554022</p>
+    </div>
+
+    <a href="order_04.html">
+    <div class="nextStep">
+        <img src="static/pic/rightArrow.png">
+        <p>下一步</p>
+    </div>
+    </a>
+
+</div>
+
+<script src="static/js/dropMenu.js"></script>
+<script src="static/js/confirm.js"></script>
+
+</body>
+</html>

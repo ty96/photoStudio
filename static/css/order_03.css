@@ -1,0 +1,315 @@
+
+/*general settings*/
+
+body,p,a,span,ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 500px;
+    min-width: 320px;
+    background-image: url("../pic/background.png");
+    background-size: 100%;
+}
+
+@media (min-width: 500px) {
+    body {
+        margin: 0 auto;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/*nav bar*/
+
+.container {
+    position: relative;
+    margin: 1.2em 0;
+}
+
+.progress {
+    padding-left: 1.2em;
+    width: 90%;
+    position: relative;
+}
+
+.select {
+    height: 1.5em;
+    position: absolute;
+    bottom: 1.0em;
+    border: 0;
+    vertical-align: middle;
+}
+
+@media (min-width: 450px) {
+    .select {
+        height: 1.8em;
+    }
+}
+
+@media (max-width: 450px) {
+    .select {
+        bottom: 1.0em;
+    }
+}
+
+@media (max-width: 430px) {
+    .select {
+        bottom: 0.9em;
+    }
+}
+
+@media (max-width: 400px) {
+    .select {
+        bottom: 0.8em;
+    }
+}
+
+@media (max-width: 350px) {
+    .select {
+        bottom: 0.7em;
+    }
+}
+
+@media (max-width: 320px) {
+    .select {
+        bottom: 0.6em;
+    }
+}
+
+.select01 {
+    left: 12%;
+}
+
+.select02 {
+    left: 35%;
+}
+
+.select03 {
+    left: 58%;
+}
+
+.select04 {
+    left: 81%;
+}
+
+/*main part*/
+
+.orderTable {
+    width: 90%;
+    margin: 0 1.2em 5em;
+    color: #757a7a;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #cccccc;
+    -moz-box-shadow: 1px 1px 5px #cccccc;
+    -webkit-box-shadow: 1px 1px 5px #cccccc;
+}
+
+.orderTable>li {
+    height: 3em;
+}
+
+.orderTable>li>p {
+    padding: 0.6em 1.1em;
+    display: inline-block;
+}
+
+#tableTop {
+    text-align: center;
+    height: 2.4em;
+    font-size: 1.2em;
+    color: white;
+    background-color: #79cdcd;
+    border-radius: 5px 5px 0 0;
+}
+
+#tableTop>p {
+    padding: 0.6em 0;
+}
+
+#tableTop>img {
+    height: 1em;
+    padding: 0.6em 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/*date selector*/
+
+.dateBox {
+    text-align: center;
+    margin: 3em auto;
+}
+
+.dateBox>ul {
+    width: 240px;
+    margin: auto;
+    border: 1px #959595 solid;
+    border-radius: 5px;
+    z-index: 999;
+    position: relative;
+    background-color: white;
+}
+
+.date {
+    padding: 0.3em;
+    margin: 0 0.3em;
+    display: inline-block;
+    color: white;
+    background-color: #959595;
+    border: 1px #959595 dotted;
+    font-size: 1.2em;
+}
+
+
+.yearSelector {
+    position: absolute;
+    left: 29px;
+}
+
+.timeSelector {
+    position: absolute;
+    left: 145px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.selector {
+    font-size: 1.2em;
+    overflow-x: hidden;
+    max-height: 163px;
+    overflow-y: auto;
+    background-color: white;
+    scrollbar-base-color: transparent;
+    display: none;
+    margin: 0 0.3em;
+}
+
+.selector>li {
+    padding: 0.3em;
+    margin: 0;
+    border-top: 1px #959595 dotted;
+}
+
+
+#confirm {
+    height: 1.6em;
+    margin: 1em auto;
+    display: block;
+}
+
+#finalTime {
+    text-align: center;
+    color: #79cdcd;
+    height: 2em;
+}
+
+
+
+
+@media (max-width: 380px) {
+    .dateBox>ul {
+        width: 240px;
+    }
+    .date {
+        font-size: 1em;
+    }
+    .orderTable p,span {
+        font-size: 0.8em;
+    }
+    #tableTop img {
+        height: 0.8em;
+    }
+    .yearSelector {
+        left: 42px;
+    }
+    .timeSelector {
+        left: 140px;
+    }
+    .selector {
+        font-size: 1em;
+    }
+}
+
+
+
+
+/*footer*/
+
+.footBar {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.msg {
+    margin-bottom: 1em;
+}
+
+.msg>p {
+    font-size: 0.8em;
+    color: #999999;
+    margin-bottom: 0.5em;
+}
+
+.nextStep {
+    height: 3.6em;
+    background-color: #79cdcd;
+    width: 100%;
+}
+
+.nextStep>img {
+    height: 1.3em;
+    margin-top: 0.3em;
+}
+
+.nextStep>p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+@media (max-height: 568px) {
+    .msg {
+        display: none;
+    }
+}
+
+
+
+/*mask*/
+
+#mask {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(100, 100, 100, 0.5);
+    position: fixed;
+    z-index: 1;
+    display: none;
+}
