@@ -10,7 +10,6 @@
 
 <div id="mask" onclick="hide()"></div>
 
-
 <div>
 
     <!--progress bar-->
@@ -30,7 +29,7 @@
             <li id="tableTop"><img src="static/pic/people.png"><p>STEP1:请输入您的拍照人数</p></li>
             <li class="selectBg">
                 <div class="dateBox">
-                    <input id="inputBox" class="date" type="number" placeholder="输入拍照人数" value="" oninput="cancelFocus()" onfocus="hideFooter()" onblur="setTimeout(seekFooter, 300)">
+                    <input id="inputNum inputBox" class="date" type="number" placeholder="输入拍照人数" value="" oninput="cancelFocus(1)" onfocus="hideFooter()" onblur="setTimeout(seekFooter, 300)">
                     <input id="blank" type="button" style="display: none">
                 </div>
             </li>

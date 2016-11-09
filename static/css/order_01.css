@@ -264,6 +264,10 @@ a:visited {
     margin-bottom: 0.2em;
 }
 
+#optionBtn {
+    display: none;
+}
+
 
 /*mask*/
 

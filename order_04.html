@@ -15,7 +15,7 @@
     <div>
         <div class="deleteMsg">
             <p>
-                手机号不对哦
+                请正确输入拍照人数[1-4]
             </p>
         </div>
         <div>
@@ -52,7 +52,7 @@
 
             <li>
                 <p>手机号码：</p>
-                <input id="inputBox" class="inputBox" placeholder="请输入手机号码" type="number" oninput="cancelTelFocus()" onfocus="hideFooter()">
+                <input id="inputBox" class="inputBox" placeholder="请输入手机号码" type="number" oninput="cancelFocus(11)" onfocus="hideFooter()" onblur="setTimeout(seekFooter, 300)">
             </li>
 
             <li>

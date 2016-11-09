@@ -8,6 +8,7 @@ var footer = document.getElementById('footBar');
 
 function hideFooter() {
     footer.style.visibility = "hidden";
+
 }
 
 function seekFooter() {
